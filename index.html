@@ -18,7 +18,7 @@
                     above & get <span class="text-[#E527B2]">20% off</span></h1>
                     <div class="my-5">
                        <span class="text-2xl">Use Promo Code</span>
-                       <button class="btn btn-lg bg-[#E527B2] text-white hover:bg-[#f774d4] px-8 ml-5">SELL200</button>
+                       <button id="coupon-code" class="btn btn-lg bg-[#E527B2] text-white hover:bg-[#f774d4] px-8 ml-5">SELL200</button>
                     </div>
             </div>
             <div class="w-1/2">
@@ -36,7 +36,7 @@
             <!-- cards 01 -->
             <div class="card bg-base-100 shadow-xl">
                 <figure class="m-5 mb-0 rounded-sm p-5 bg-[#F3F4F6]">
-                  <img src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
+                  <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
                   <div class="rating">
@@ -48,6 +48,66 @@
                   </div>
                   <h2 class="card-title">K. Accessories</h2>
                   <p>39.00 TK</p>
+                  <button onclick="addToCard(this)" class="btn btn-sm btn-primary">Add to card</button>
+                </div>
+              </div>
+            <!-- cards 02-->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="m-5 mb-0 rounded-sm p-5 bg-[#F3F4F6]">
+                  <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating">
+                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
+                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
+                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
+                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
+                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
+                  </div>
+                  <h2 class="card-title">Accessories</h2>
+                  <p>25.00 TK</p>
+                  <button onclick="addToCard(this)" class="btn btn-sm btn-primary">Add to card</button>
+                </div>
+              </div>
+            <!-- cards 03-->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="m-5 mb-0 rounded-sm p-5 bg-[#F3F4F6]">
+                  <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating">
+                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
+                  </div>
+                  <h2 class="card-title">Home Cooker</h2>
+                  <p>49.00 TK</p>
+                  <button onclick="addToCard(this)" class="btn btn-sm btn-primary">Add to card</button>
+                </div>
+              </div>
+        </div>
+
+            <!----------------------------- Sportswear section ------------------------------------->
+        <h1 class="text-5xl font-bold mb-8 mt-20">Sportswear</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10">
+            <!-- cards 01 -->
+            <div class="card bg-base-100 shadow-xl">
+                <figure class="m-5 mb-0 rounded-sm p-5 bg-[#F3F4F6]">
+                  <img src="./images/prod4.png" alt="Shoes" class="rounded-xl" />
+                </figure>
+                <div class="card-body items-center text-center">
+                  <div class="rating">
+                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
+                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
+                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
+                  </div>
+                  <h2 class="card-title">Sports Back Cap</h2>
+                  <p>49.00 TK</p>
+                  <button onclick="addToCard(this)" class="btn btn-sm btn-primary">Add to card</button>
                 </div>
               </div>
             <!-- cards 02-->
@@ -63,8 +123,9 @@
                     <i class="fa-regular fa-star text-[#FBBF24]"></i>
                     <i class="fa-regular fa-star text-[#FBBF24]"></i>
                   </div>
-                  <h2 class="card-title">Accessories</h2>
-                  <p>25.00 TK</p>
+                  <h2 class="card-title">Full Jersey Set</h2>
+                  <p>69.00 TK</p>
+                  <button onclick="addToCard(this)" class="btn btn-sm btn-primary">Add to card</button>
                 </div>
               </div>
             <!-- cards 03-->
@@ -80,64 +141,9 @@
                     <i class="fa-solid fa-star text-[#FBBF24]"></i>
                     <i class="fa-regular fa-star text-[#FBBF24]"></i>
                   </div>
-                  <h2 class="card-title">Home Cooker</h2>
-                  <p>49.00 TK</p>
-                </div>
-              </div>
-        </div>
-
-            <!----------------------------- Sportswear section ------------------------------------->
-        <h1 class="text-5xl font-bold mb-8 mt-20">Sportswear</h1>
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 md:gap-10">
-            <!-- cards 01 -->
-            <div class="card bg-base-100 shadow-xl">
-                <figure class="m-5 mb-0 rounded-sm p-5 bg-[#F3F4F6]">
-                  <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <div class="rating">
-                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
-                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
-                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
-                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
-                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
-                  </div>
-                  <h2 class="card-title">Sports Back Cap</h2>
-                  <p>49.00 TK</p>
-                </div>
-              </div>
-            <!-- cards 02-->
-            <div class="card bg-base-100 shadow-xl">
-                <figure class="m-5 mb-0 rounded-sm p-5 bg-[#F3F4F6]">
-                  <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <div class="rating">
-                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
-                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
-                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
-                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
-                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
-                  </div>
-                  <h2 class="card-title">Full Jersey Set</h2>
-                  <p>69.00 TK</p>
-                </div>
-              </div>
-            <!-- cards 03-->
-            <div class="card bg-base-100 shadow-xl">
-                <figure class="m-5 mb-0 rounded-sm p-5 bg-[#F3F4F6]">
-                  <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
-                </figure>
-                <div class="card-body items-center text-center">
-                  <div class="rating">
-                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
-                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
-                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
-                    <i class="fa-solid fa-star text-[#FBBF24]"></i>
-                    <i class="fa-regular fa-star text-[#FBBF24]"></i>
-                  </div>
                   <h2 class="card-title">Sports cates</h2>
                   <p>159.00 TK</p>
+                  <button onclick="addToCard(this)" class="btn btn-sm btn-primary">Add to card</button>
                 </div>
               </div>
         </div>
@@ -147,7 +153,7 @@
             <!-- cards 01 -->
             <div class="card bg-base-100 shadow-xl">
                 <figure class="m-5 mb-0 rounded-sm p-5 bg-[#F3F4F6]">
-                  <img src="./images/prod1.png" alt="Shoes" class="rounded-xl" />
+                  <img src="./images/prod7.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
                   <div class="rating">
@@ -159,12 +165,13 @@
                   </div>
                   <h2 class="card-title">Single Relax Chair</h2>
                   <p>185.00 TK</p>
+                  <button onclick="addToCard(this)" class="btn btn-sm btn-primary">Add to card</button>
                 </div>
               </div>
             <!-- cards 02-->
             <div class="card bg-base-100 shadow-xl">
                 <figure class="m-5 mb-0 rounded-sm p-5 bg-[#F3F4F6]">
-                  <img src="./images/prod2.png" alt="Shoes" class="rounded-xl" />
+                  <img src="./images/prod8.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
                   <div class="rating">
@@ -176,12 +183,13 @@
                   </div>
                   <h2 class="card-title">Children play</h2>
                   <p>299.00 TK</p>
+                  <button onclick="addToCard(this)" class="btn btn-sm btn-primary">Add to card</button>
                 </div>
               </div>
             <!-- cards 03-->
             <div class="card bg-base-100 shadow-xl">
                 <figure class="m-5 mb-0 rounded-sm p-5 bg-[#F3F4F6]">
-                  <img src="./images/prod3.png" alt="Shoes" class="rounded-xl" />
+                  <img src="./images/prod9.png" alt="Shoes" class="rounded-xl" />
                 </figure>
                 <div class="card-body items-center text-center">
                   <div class="rating">
@@ -193,6 +201,7 @@
                   </div>
                   <h2 class="card-title">Flexible Sofa</h2>
                   <p>339.00 TK</p>
+                  <button onclick="addToCard(this)" class="btn btn-sm btn-primary">Add to card</button>
                 </div>
               </div>
         </div>
@@ -202,22 +211,41 @@
             <div class="bg-white p-5 rounded-md text-center w-72 mb-10">
                 <h1 class="text-3xl mb-2">Have a coupon?</h1>
                 <div class="join">
-                 <input type="text" class=" join-item border" name="" id="">
-                 <button class="btn bg-[#E527B2] hover:bg-[#e05fbe] text-white join-item">Apply</button>
+                 <input type="text" class=" join-item border" name="" id="coupon-field">
+                 <button onclick="applyCoupon()" id="apply" disabled class="btn bg-[#E527B2] hover:bg-[#e05fbe] text-white join-item">Apply</button>
                 </div>
             </div>
 
             <div class="bg-white p-5 rounded-md text-left w-72">
+              <div id="addToCardCantainer">
+                 <!-- ADDED CARD TITLE -->
+              </div>
                 <div class="divider"></div> 
-                <p class="text-xl mb-2">Total price: 257.00TK</p>
-                <p class="text-xl mb-2">Discount : 51.40TK</p>
-                <p class="text-xl mb-2">Total: 205.60 TK</p>
+                <p class="text-xl mb-2 font-bold">Total price: <span id="total-price">00</span>TK</p>
+                <p class="text-xl mb-2 font-bold">Discount : <span id="discount"> 00</span>TK</p>
+                <p class="text-xl mb-2 font-bold">Total: <span id="userPayPrice">00</span> TK</p>
                 <div class="divider"></div> 
-                 <button class="btn bg-[#E527B2] hover:bg-[#e05fbe] text-white join-item block w-full ">Make Purchase</button>
+                 <button id="Purchase" onclick="my_modal_5.showModal()" disabled class="btn bg-[#E527B2] hover:bg-[#e05fbe] text-white join-item block w-full ">Make Purchase</button>
+                 <button >remove</button>
+                 <!-- Open the modal using ID.showModal() method -->
+                  <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                    <div class="modal-box text-center">
+                      <img class="mx-auto" src="./images/congo.png" alt="">
+                      <h3 class="font-bold text-3xl">Congratulations</h3>
+                      <p class="py-4">Your Purchase the product</p>
+                      <div class="modal-action ">
+                        <form method="dialog" class="w-full">
+                            <button  id="goHome" class="btn btn-lg bg-[#E527B2] text-white hover:bg-[#f774d4] px-8 ml-5">Go home</button>
+                        </form>
+                      </div>
+                    </div>
+                  </dialog>
                
             </div>
         </div>
        </div>
+
     </main>
+    <script src="./summer.js"></script>
 </body>
 </html>
